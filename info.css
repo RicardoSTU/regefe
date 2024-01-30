@@ -1,0 +1,62 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f1; /* ÷вет фона страницы */
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #555;
+}
+
+#greenTeamInfo h2 {
+    color: #4CAF50;
+}
+
+#photoGallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.photo-container {
+    width: 30%;
+    height: 200px;
+    background-color: #b2dfdb; /* ÷вет фона фото-контейнера */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
