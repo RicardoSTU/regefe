@@ -1,0 +1,120 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff8a80, #ea80fc, #8c9eff, #80d8ff, #a7ffeb, #b9f6ca);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    perspective: 800px;
+}
+
+.header {
+    background: linear-gradient(to right, #e84393, #4a69bd);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    font-family: 'Caveat', cursive;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to right, #d63384, #4a69bd);
+    border-radius: 0 0 20px 20px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+form:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02) rotateX(10deg);
+}
+
+label, input, button {
+    margin: 10px 0;
+    display: block;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #e84393;
+}
+
+button {
+    background: linear-gradient(to right, #4a69bd, #e84393);
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: url('path/to/custom-cursor.png'), auto;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background: linear-gradient(to right, #e84393, #4a69bd);
+    transform: scale(1.05);
+}
+
+.footer {
+    background: linear-gradient(to right, #e84393, #4a69bd);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    font-family: 'Caveat', cursive;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.footer:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to right, #d63384, #4a69bd);
+    border-radius: 20px 20px 0 0;
+}
+
+.container:hover, .header:hover, .form-container:hover, .footer:hover {
+    box-shadow: 0 0 40px rgba(0, 184, 148, 0.8);
+}
